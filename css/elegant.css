@@ -2,8 +2,12 @@ body, section {
 	background-image: url("images/footer_lodyas.png");
 }
 
-img {
-	max-width: 100%;
+.logo {
+	text-align: center;
+}
+.logo img {
+	width: 100%;
+	max-width: 400px;
 }
 
 
