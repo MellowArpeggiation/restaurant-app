@@ -2,19 +2,23 @@
 
 /*global $*/
 
-/*global swapInit, swapElegant*/
+/*global swapInit, swapElegant, clearIntervals*/
 
+var intervals = [];
 
 function swapInit() {
 	'use strict';
 	
+	clearIntervals();
+	
 	$(".ele-swap").each(function () {
-		setInterval(swapElegant, 50, this);
+		intervals.push(setInterval(swapElegant, 50, this));
 	});
 }
 
 function swapElegant(element) {
 	'use strict';
+	
 	var createdString = "";
 	
 	if (Math.random() > 0.08) {
@@ -30,7 +34,22 @@ function swapElegant(element) {
 	$(element).attr("data-text", createdString);
 }
 
+function clearIntervals() {
+	'use strict';
+	
+	var i;
+	for (i = 0; i < intervals.length; i += 1) {
+		window.clearInterval(intervals[i]);
+	}
+	
+	intervals = [];
+}
+
 $(document).ready(function () {
 	'use strict';
+	
 	swapInit();
+	$("body").on("pagecontainerchange", swapInit);
 });
+
+
