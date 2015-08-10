@@ -27,6 +27,7 @@ function swapElegant(element) {
 	createdString += "gant";
 	
 	$(element).html(createdString);
+	$(element).attr("data-text", createdString);
 }
 
 $(document).ready(function () {
