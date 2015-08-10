@@ -14,6 +14,37 @@ body {
 	max-width: 400px;
 }
 
+.ui-btn-img {
+	padding: 0;
+	line-height: 0;
+}
+.ui-btn-img img {
+	max-width: 100%;
+	position: relative;
+}
+.ui-btn-img span {
+	position: absolute;
+	left: 0;
+	padding-left: 15px;
+	padding-right: 8px;
+	bottom: 32px;
+	height: 30px;
+	background-color: rgba(0, 0, 0, 0.6);
+	line-height: 2;
+}
+
+.ui-img-blur img {
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+	transition: 0.2s -webkit-filter, filter;
+}
+
+.ui-img-blur:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+
 /* Desktop class devices */
 @media only screen and (min-width: 600px) {
 	.ui-max-width {
