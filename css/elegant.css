@@ -1,5 +1,9 @@
-body, section {
+body {
 	background-image: url("images/footer_lodyas.png");
+}
+
+.ui-page {
+	background: transparent;
 }
 
 .logo {
@@ -8,6 +12,16 @@ body, section {
 .logo img {
 	width: 100%;
 	max-width: 400px;
+}
+
+/* Desktop class devices */
+@media only screen and (min-width: 600px) {
+	.ui-max-width {
+		width: 600px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		position: relative !important;
+	}
 }
 
 
