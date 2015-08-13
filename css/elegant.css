@@ -10,8 +10,8 @@ body {
 	background-image: url("images/footer_lodyas.png");
 }
 
-.ui-page {
-	background: transparent;
+.ui-page, .ui-panel-wrapper {
+	background: transparent !important;
 }
 
 .logo {

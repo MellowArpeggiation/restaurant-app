@@ -19,13 +19,14 @@
 
 	<body>
 		<section id="main-course" data-role="page">
-			<div data-role="panel" id="contact" data-position-fixed="true" data-position="right">
-				<h1>Contact Us</h1>
-				<p>Phone Number: blah</p>
-                <p>Include a map here</p>
+			<div data-role="panel" id="contact" data-position-fixed="true" data-position="right" data-display="overlay">
+				<h3>Contact <span class="glitch" data-text="Elegant">Elegant</span></h3>
+				<p>Phone Number: <a href="tel:+1-800-555-5555">1 800 555 5555</a></p>
+                <p>Email: <a href="mailto:georgewpaton@me.com">georgewpaton@me.com</a></p>
 			</div>
 			<div data-role="header" data-position="fixed">
-				<h1>Eat <span class="ele-swap glitch" data-text="Elegant">Elegant</span></h1>
+				<a href="index.html" data-icon="home" data-iconpos="notext" class="ui-btn-left">Home</a>
+				<h1>Eat <span class="glitch" data-text="Elegant">Elegant</span></h1>
                 <a href="#contact" data-icon="phone" data-iconpos="notext" class="ui-btn-right">Contact</a>
 			</div>
 			<div data-role="content" class="ui-content ui-max-width">
@@ -33,6 +34,10 @@
 				<a href="#honey-prawns" class="ui-btn ui-btn-img ui-img-blur" data-transition="slide">
 					<img src="img/honeyprawns.jpg" alt="Menu">
 					<span>Honey Prawns</span>
+				</a>
+				<a href="#marv-med-syltede-grontsager" class="ui-btn ui-btn-img ui-img-blur" data-transition="slide">
+					<img src="img/marvmedsyltedegr%C3%B8ntsager.jpg" alt="Menu">
+					<span>Marv Med Syltede Grøntsager</span>
 				</a>
 			</div>
 			<div data-role="footer" data-position="fixed">
@@ -49,6 +54,14 @@
 		<section id="honey-prawns" data-role="page">
 			<div data-role="header" data-add-back-btn="true">
 				<h1>Honey Prawns</h1>
+			</div>
+			<div data-role="content" class="ui-content ui-max-width">
+				<p>Delicious food here</p>
+			</div>
+		</section> <!-- /page -->
+		<section id="marv-med-syltede-grontsager" data-role="page">
+			<div data-role="header" data-add-back-btn="true">
+				<h1>Marv Med Syltede Grøntsager</h1>
 			</div>
 			<div data-role="content" class="ui-content ui-max-width">
 				<p>Delicious food here</p>

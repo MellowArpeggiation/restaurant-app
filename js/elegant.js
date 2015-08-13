@@ -11,7 +11,7 @@ function swapInit() {
 	
 	clearIntervals();
 	
-	$(".ele-swap").each(function () {
+	$(".glitch").each(function () {
 		intervals.push(setInterval(swapElegant, 50, this));
 	});
 }
