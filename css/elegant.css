@@ -8,6 +8,7 @@
 
 body {
 	background-image: url("images/footer_lodyas.png");
+	background-attachment: fixed;
 }
 
 .ui-page, .ui-panel-wrapper {
