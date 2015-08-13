@@ -55,10 +55,24 @@ body {
 	filter: blur(0);
 }
 
-.ui-field-stars label {
-	font-size: 2.6vw;
-	padding: 8px 4px;
+.ui-star-rating {
+	font-size: 2em;
+	text-align: center;
+	direction: rtl;
+	margin-bottom: 1em;
 }
+
+.ui-star-rating .fa-star-o.active:before, .ui-star-rating .fa-star-o.active ~ .fa-star-o:before {
+	content: "\f005"
+}
+
+.ui-star-rating .fa-star-o:hover:before, .ui-star-rating .fa-star-o:hover ~ .fa-star-o:before {
+	color: #56BC8A;
+	content: "\f005"
+}
+
+
+
 
 /* Fix jQuery mobile navbar bug */
 .ui-navbar li:first-child .ui-btn {

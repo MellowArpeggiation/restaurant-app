@@ -2,17 +2,25 @@
 
 /*global $*/
 
-/*global swapInit, swapElegant, clearIntervals*/
+/*global init, swapElegant, clearIntervals*/
 
 var intervals = [];
 
-function swapInit() {
+function init() {
 	'use strict';
 	
 	clearIntervals();
 	
 	$(".glitch").each(function () {
 		intervals.push(setInterval(swapElegant, 50, this));
+	});
+	
+	$(".ui-star-rating .fa-star-o").on("click", function () {
+		
+		$(this).parent().children().each(function () {
+			$(this).removeClass("active");
+		});
+		$(this).addClass("active");
 	});
 }
 
@@ -45,11 +53,17 @@ function clearIntervals() {
 	intervals = [];
 }
 
+function thankUser() {
+	'use strict';
+	
+	$("#feedback .ui-content").html("<h1>Thank you for your comments</h1>");
+}
+
 $(document).ready(function () {
 	'use strict';
 	
-	swapInit();
-	$("body").on("pagecontainerchange", swapInit);
+	init();
+	$("body").on("pagecontainerchange", init);
 });
 
 

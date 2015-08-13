@@ -20,55 +20,23 @@
 	</head> 
 
 	<body>
-		<section id="home" data-role="page">
+		<section id="feedback" data-role="page">
 			<div data-role="header" data-add-back-btn="true" data-position="fixed">
 				<h1>Feedback</h1>
 			</div>
 			<div data-role="content" class="ui-content ui-max-width">
-				<p>How would you rate your experience?</p>
-				<form class="ui-field-stars">
-					<fieldset data-role="controlgroup" data-type="horizontal">
-						<input type="radio" name="star" id="star-1" value="1">
-						<label for="star-1">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-o"></i>
-							<i class="fa fa-star-o"></i>
-							<i class="fa fa-star-o"></i>
-							<i class="fa fa-star-o"></i>
-						</label>
-						<input type="radio" name="star" id="star-2" value="2">
-						<label for="star-2">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-o"></i>
-							<i class="fa fa-star-o"></i>
-							<i class="fa fa-star-o"></i>
-						</label>
-						<input type="radio" name="star" id="star-3" value="3" checked="checked">
-						<label for="star-3">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-o"></i>
-							<i class="fa fa-star-o"></i>
-						</label>
-						<input type="radio" name="star" id="star-4" value="4">
-						<label for="star-4">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-o"></i>
-						</label>
-						<input type="radio" name="star" id="star-5" value="5">
-						<label for="star-5">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</label>
-					</fieldset>
+				<form>
+					<p>How would you rate your experience?</p>
+					<div class="ui-star-rating">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<label for="comments">Additional comments</label>
+					<textarea name="comments" id="comments"></textarea>
+					<button type="button" onclick="thankUser()">Submit</button>
 				</form>
 			</div>
 		</section> <!-- /page -->
