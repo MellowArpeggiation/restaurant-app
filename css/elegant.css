@@ -14,12 +14,15 @@ body {
 	background: transparent !important;
 }
 
-.logo {
-	text-align: center;
-}
-.logo img {
+.header-img {
 	width: 100%;
-	max-width: 400px;
+}
+
+.header-img-attach {
+	margin-top: -1em;
+	margin-left: -1em;
+	margin-right: -1em;
+	width: calc(100% + 2em);
 }
 
 .ui-btn-img {
@@ -52,6 +55,10 @@ body {
 	filter: blur(0);
 }
 
+.ui-field-stars label {
+	font-size: 2.6vw;
+	padding: 8px 4px;
+}
 
 /* Desktop class devices */
 @media only screen and (min-width: 600px) {
@@ -60,6 +67,14 @@ body {
 		margin-left: auto !important;
 		margin-right: auto !important;
 		position: relative !important;
+	}
+	.ui-field-stars label {
+		font-size: 1em;
+	}
+	
+	.header-img-attach {
+		margin: 0;
+		width: 100%;
 	}
 }
 
