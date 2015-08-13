@@ -1,3 +1,11 @@
+/* Fonts */
+@font-face {
+    font-family: secretcode;
+    src: url(fonts/secrcode.ttf) format('truetype'),
+		url(fonts/secrcode.woff) format('woff');
+}
+
+
 body {
 	background-image: url("images/footer_lodyas.png");
 }
@@ -58,7 +66,8 @@ body {
 
 /* Glitch text */
 .glitch {
-	font-size: 1em;
+	font-family: secretcode, monospace;
+	font-size: 1.2em;
 	position: relative;
 	width: 100px;
 	margin: 0 auto;
