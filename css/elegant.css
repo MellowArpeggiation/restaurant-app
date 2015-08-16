@@ -4,21 +4,21 @@
     src: url(fonts/secrcode.ttf) format('truetype'),
 		url(fonts/secrcode.woff) format('woff');
 }
+/*****/
 
-
+/* Background image */
 body {
 	background-image: url("images/footer_lodyas.png");
 	background-attachment: fixed;
 }
-
 .ui-page, .ui-panel-wrapper {
 	background: transparent !important;
 }
+/*****/
 
 .header-img {
 	width: 100%;
 }
-
 .header-img-attach {
 	margin-top: -1em;
 	margin-left: -1em;
@@ -26,6 +26,7 @@ body {
 	width: calc(100% + 2em);
 }
 
+/* Image based buttons with inline captions */
 .ui-btn-img {
 	padding: 0;
 	line-height: 0;
@@ -44,35 +45,42 @@ body {
 	background-color: rgba(0, 0, 0, 0.6);
 	line-height: 2;
 }
+/*****/
 
+/* Fade images in */
 .ui-img-blur img {
 	-webkit-filter: blur(2px);
 	filter: blur(2px);
 	transition: 0.2s -webkit-filter, filter;
 }
-
 .ui-img-blur:hover img {
 	-webkit-filter: blur(0);
 	filter: blur(0);
 }
+/*****/
 
+/* Star rating control */
 .ui-star-rating {
 	font-size: 2em;
 	text-align: center;
+	/* RTL hack (css can only select successive siblings) */
 	direction: rtl;
 	margin-bottom: 1em;
+	cursor: pointer;
 }
-
 .ui-star-rating .fa-star-o.active:before, .ui-star-rating .fa-star-o.active ~ .fa-star-o:before {
 	content: "\f005"
 }
-
 .ui-star-rating .fa-star-o:hover:before, .ui-star-rating .fa-star-o:hover ~ .fa-star-o:before {
 	color: #56BC8A;
 	content: "\f005"
 }
 
-
+.ui-cost {
+	font-style: italic;
+	float: right;
+	padding-left: 10px;
+}
 
 
 /* Fix jQuery mobile navbar bug */
@@ -99,7 +107,7 @@ body {
 }
 
 
-/* Glitch text */
+/* Glitch text, generated procedurally with SASS */
 .glitch {
 	font-family: secretcode, monospace;
 	font-size: 1.2em;

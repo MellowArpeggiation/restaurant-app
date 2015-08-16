@@ -21,7 +21,8 @@
 
 	<body>
 		<section id="feedback" data-role="page">
-			<div data-role="header" data-add-back-btn="true" data-position="fixed">
+			<div data-role="header" data-position="fixed">
+				<a href="index.html" data-icon="home" data-iconpos="notext" class="ui-btn-left">Home</a>
 				<h1>Feedback</h1>
 			</div>
 			<div data-role="content" class="ui-content ui-max-width">
@@ -36,7 +37,8 @@
 					</div>
 					<label for="comments">Additional comments</label>
 					<textarea name="comments" id="comments"></textarea>
-					<button type="button" onclick="thankUser()">Submit</button>
+					<!-- Delay change to imply action, !remove! when action actually coded in -->
+					<button type="button" onclick="setTimeout(thankUser, 150);">Submit</button>
 				</form>
 			</div>
 		</section> <!-- /page -->
