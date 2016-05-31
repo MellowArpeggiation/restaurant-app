@@ -2,15 +2,13 @@
 <html> 
 	<head> 
 		<!-- Copyright 2015 George Paton -->
-		<title>Eat Elegant</title> 
+		<title>Elegant Menu</title> 
 		
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
 
 		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 		<link rel="stylesheet" href="css/themes/dark-green.min.css" />
 		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-		
 		<link rel="stylesheet" href="css/elegant.css" />
 		
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -20,7 +18,7 @@
 	</head> 
 
 	<body>
-		<section id="home" data-role="page">
+		<section id="main-course" data-role="page">
 			<div data-role="panel" id="contact" data-position-fixed="true" data-position="right" data-display="overlay">
 				<h3>Contact <span class="glitch" data-text="Elegant">Elegant</span></h3>
 				<p>Phone Number: <a href="tel:+1-800-555-5555">1 800 555 5555</a></p>
@@ -28,45 +26,24 @@
 				<iframe width="240" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Deakin%20University%2C%20Burwood%2C%20Victoria%2C%20Australia&key=AIzaSyCkTZcoLp4L9WRrFaYAXNI2WEVLz9oar3o"></iframe>
 			</div>
 			<div data-role="header" data-position="fixed">
+				<a href="index.html" data-icon="home" data-iconpos="notext" class="ui-btn-left">Home</a>
 				<h1>Eat <span class="glitch" data-text="Elegant">Elegant</span></h1>
                 <a href="#contact" data-icon="phone" data-iconpos="notext" class="ui-btn-right">Contact</a>
 			</div>
 			<div data-role="content" class="ui-content ui-max-width">
-				<img src="img/logo.png" alt="313" class="header-img">
-				<p></p>
-				<div class="ui-grid-b">
-					<div class="ui-block-a">
-						<a href="menu.html" class="ui-btn ui-btn-img ui-img-blur">
-							<img src="img/menu.jpg" alt="Menu">
-							<span>Menu</span>
-						</a>
-					</div>
-					<div class="ui-block-b">
-						<a href="about.html" class="ui-btn ui-btn-img ui-img-blur" data-rel="dialog" data-transition="slidedown">
-							<img src="img/about.jpg" alt="Menu">
-							<span>About</span>
-						</a>
-					</div>
-					<div class="ui-block-c">
-						<a href="feedback.html" class="ui-btn ui-btn-img ui-img-blur">
-							<img src="img/feedback.jpg" alt="Menu">
-							<span>Vibes</span>
-						</a>
-					</div>
+				<a href="menu/wine.html" class="ui-btn ui-btn-img" data-transition="slide">
+					<img src="img/wine.jpg" alt="Menu">
+					<span>Wine List</span>
+				</a>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="menu.html" data-transition="none">Mains</a></li>
+						<li><a href="dessert.html" data-transition="none">Desserts</a></li>
+						<li><a href="#" class="ui-btn-active ui-state-persist" data-transition="none">Drinks</a></li>
+					</ul>
 				</div>
-			</div>
-		</section> <!-- /page -->
-		
-		<section id="about" data-role="page">
-			<div data-role="header">
-				<h1>About</h1>
-			</div>
-			<div data-role="content">
-				<p><span class="glitch" data-text="Elegant">Elegant</span>, founded in 20XX, has been recognised as the leading retrofuturistic restaurant in Melbourne. Award winning food, first class service, and meticulous attention to detail, create a wonderful restaurant experience.</p>
-				<p><em>Application developed by George Paton, a student at Deakin, as part of SIT313.</em></p>
-			</div>
-			<div data-role="footer">
-				<h2>Copyright 2015 George Paton</h2>
 			</div>
 		</section> <!-- /page -->
 	</body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+		<!-- Copyright 2015 George Paton -->
+		<title>Elegant Feedback</title> 
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
+		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="css/themes/dark-green.min.css" />
+		<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+		
+		<link rel="stylesheet" href="css/elegant.css" />
+		
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
+		<script type="text/javascript" src="js/elegant.js"></script>
+	</head> 
+
+	<body>
+		<section id="feedback" data-role="page">
+			<div data-role="panel" id="contact" data-position-fixed="true" data-position="right" data-display="overlay">
+				<h3>Contact <span class="glitch" data-text="Elegant">Elegant</span></h3>
+				<p>Phone Number: <a href="tel:+1-800-555-5555">1 800 555 5555</a></p>
+                <p>Email: <a href="mailto:georgewpaton@me.com">georgewpaton@me.com</a></p>
+				<iframe width="240" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Deakin%20University%2C%20Burwood%2C%20Victoria%2C%20Australia&key=AIzaSyCkTZcoLp4L9WRrFaYAXNI2WEVLz9oar3o"></iframe>
+			</div>
+			<div data-role="header" data-position="fixed">
+				<a href="index.html" data-icon="home" data-iconpos="notext" class="ui-btn-left">Home</a>
+				<h1>Feedback</h1>
+				<a href="#contact" data-icon="phone" data-iconpos="notext" class="ui-btn-right">Contact</a>
+			</div>
+			<div data-role="content" class="ui-content ui-max-width">
+				<form>
+					<p>How would you rate your experience?</p>
+					<div class="ui-star-rating">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+					<label for="comments">Additional comments</label>
+					<textarea name="comments" id="comments"></textarea>
+					<!-- Delay change to imply action, !remove! when action actually coded in -->
+					<button type="button" onclick="setTimeout(thankUser, 150);">Submit</button>
+				</form>
+			</div>
+		</section> <!-- /page -->
+	</body>
+</html>
